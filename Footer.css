@@ -1,0 +1,110 @@
+
+
+Link {
+    text-decoration: none;
+}
+
+.footer {
+    height: 19vh;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(231, 231, 231);
+}
+
+.footerLinks, .footerLogoWrapper, .gitHubAndPortfolioLinks {
+    height: 80%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 800;
+
+}
+
+.footerLinks, .gitHubAndPortfolioLinks {
+    overflow: hidden;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.clubFooterLink, .link {
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 35%;
+    width: 20%;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.link {
+    width: 30%;
+    height: 10px;
+}
+
+.clubFooterLink:hover, .link:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+@media (max-width: 832px) {
+    .link {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 630px) {
+    .footerLinks, .gitHubAndPortfolioLinks {
+        flex-direction: column;
+    }
+
+    .footerLinks{
+        text-align: left;
+        align-items: flex-start;
+        align-items: center;
+    }
+    .footerLinks div {
+        font-size: 1em;
+
+    }
+    
+    .link {
+        width: 100%;
+        font-size: 1.2em;
+        border: none;
+        font-weight: bold;
+
+    }
+}
+
+.footerLogoWrapper img {
+    height: 80%;
+    width: auto;
+    filter: contrast(100);
+    filter: invert(100%);
+}
+
+.footerLogoWrapper img:hover {
+    cursor: pointer;
+}
+
+.footerLogoWrapper Link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid red 1px;
+}
+

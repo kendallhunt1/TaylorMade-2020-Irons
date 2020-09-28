@@ -1,0 +1,369 @@
+.clubsList {
+    height: 200vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5vh;
+    overflow: scroll;
+}
+
+.clubSection {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.gridBox {
+    height: 95%;
+    width: 50%;
+}
+
+#clubDescription {
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+
+.informationWrapper {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.informationWrapperH1 {
+    text-align: center;
+    font-size: 1.9vh;
+    width: 65%;
+    max-height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.informationWrapperP {
+    width: 65%;
+    min-height: 60%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-height: 50%;
+    font-size: 2.3vh;
+}
+
+@media (max-width: 831px) {
+    .informationWrapperP {
+        font-size: 1.7vw;
+    }
+    .informationWrapperH1 {
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width: 697px) {
+    .informationWrapperP {
+        font-size: 1.9vw;
+    }
+}
+
+@media (max-width: 606px) {
+    .clubsList {
+        height: 120vh;
+        padding-bottom: 0;
+    }
+    .gridBox {
+        max-height: 100%;
+    }
+    .informationWrapperP {
+        font-size: 2vw;
+        width: 100%;
+    }
+
+    .informationWrapperH1 {
+        width: 100%;
+    }
+    #clubDescription {
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .wrapper {
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    #clubDescription {
+        align-items: center;
+    }
+    .informationWrapper {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 470px) {
+    .informationWrapperP {
+        font-size: 2.2vw;
+    }
+}
+
+@media (max-width: 421px) {
+    #p790Title {
+        font-size: 1.7vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .informationWrapperP {
+        font-size: 2.5vw;
+    }
+
+}
+
+#p790clubImage {
+    background: url('https://assets.tmcontent.com/i/c4/60948/P790~H900_Mcrop_P50-50.jpg');
+}
+
+#p770clubImage {
+    background: url('https://assets.tmcontent.com/i/93/60947/P770~H900_Mcrop_P50-50.jpg');
+}
+#p7mcclubImage {
+    background: url('https://assets.tmcontent.com/i/68/60946/P7MC~H900_Mcrop_P50-50.jpg');
+}
+#p7mbclubImage {
+    background: url('https://assets.tmcontent.com/i/20/60945/P7MB~H900_Mcrop_P50-50.jpg');
+}
+
+#p790clubImage, #p770clubImage, #p7mcclubImage, #p7mbclubImage {
+    height: 100%;
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+
+#p790Club {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 60%, rgba(249,249,249,1) 62%);
+}
+
+#p7mcClub {
+    background: rgb(241, 241, 241);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 60%, rgb(241, 241, 241) 62%);
+}
+
+#p7mbClub {
+    background: rgb(249, 249, 249);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 60%, rgb(249, 249, 249) 62%);
+}
+
+@media (max-width: 864px) {
+    #p790clubImage, #p7mbclubImage, #p7mcclubImage {
+        background-size: 100% 100%;
+    }
+    #p790Club, #p7mcClub, #p7mbClub {
+        background: none;
+    }
+}
+
+@media (max-width: 606px) {
+    #p790clubImage, #p7mbclubImage, #p7mcclubImage, #p770clubImage {
+        background-size: 100% 93%;
+    }
+}
+
+.smallPictureSelect {
+    border: solid rgb(179, 178, 178) 1px;
+}
+
+.smallPictureSelect:hover {
+    border: solid black 1px;
+}
+
+.learnMoreButtonWrapper {
+    display: flex;
+    justify-content: center;
+
+    width: 65%;
+    height: 5vh;
+}
+
+.learnMoreButtonWrapper a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.learnMoreButton {
+    width: 75%;
+    height: 100%;
+    border-radius: 5px 5px;
+    border: none;
+    background: rgb(194, 193, 193);
+    transition: background 0.5s;
+}
+
+.learnMoreButton:hover {
+    border: solid black 1px;
+    background: none;
+    color: black;
+    cursor: pointer;
+}
+
+@media (max-width: 606px) {
+    .learnMoreButtonWrapper {
+        height: 4vh;
+    }
+}
+
+@media (max-width: 370px) {
+    .learnMoreButtonWrapper {
+        width: 75%;
+    }
+}
+
+#doMore {
+    /* border: solid red 1px; */
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    width: 37%;
+}
+
+.clubPictures {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainPictureWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid green 1px; */
+    height: 100%;
+    max-width: 54%;
+}
+
+.mainPicture {
+    height: 90%;
+    width: 99%;
+}
+
+.smallPictures {
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: 32% 32% 32%;
+    gap: 1%2%;
+    grid-template-areas:
+        ". ."
+        ". ."
+        ". .";;
+    min-width: 44%;
+    max-width: 44%;
+}
+
+.smallPictures img {
+    height: 100%;
+    width: 100%;
+}
+
+.smallPictures:hover {
+    cursor: pointer;
+}
+
+.dropDownSelections {
+    max-width: 100%;
+    height: 3rem;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 48% 48%;
+    gap: 1% 2%;
+    grid-template-areas:
+        ". ."
+        ". .";
+}
+
+.labelAndDropdown {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.labelAndDropdown select {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border-radius: 2px 2px;
+}
+
+.labelAndDropdown select:hover {
+    cursor: pointer;
+}
+
+.buyButtonWrapper {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buyButton {
+    margin-top: 2%;
+    width: 40%;
+    height: 100%;
+    border: none;
+    background: rgb(194, 193, 193);
+    border-radius: 5px 5px;
+    transition: 0.5s;
+}
+
+.buyButton:hover {
+    border: solid black 1px;
+    cursor: pointer;
+    background: none;
+    color: black;
+}
+
+.ironButton{
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.ironButton a{ 
+    color: black;
+    text-decoration: none;
+}
+
+.ironButton:hover {
+    color: white;
+}
+
+

@@ -1,0 +1,203 @@
+.cart {
+    padding-top: 14vh;
+    max-height: 100vh;
+    width: 100vw;
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.leftPicture {
+    height: 100vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.picture {
+    height: 33.33%;
+    width: 100%;
+}
+
+
+#picture1 {
+    background: url('https://assets.tmcontent.com/i/e7/9890/OSN04063~W1200_P54-76-59-52.jpg');
+
+}
+
+#picture2 {
+    background: url('https://assets.tmcontent.com/i/ec/2619/2019_MG2Wedge_Beauty-Photo@2x~W1126-6968325792_H900_Mcrop_CZ1_P50-50.jpg');
+}
+
+#picture3 {
+    background: url('https://www.taylormadegolf.com/on/demandware.static/-/Sites-tmag-master-catalog/en_US/v1599839871089/zoom/JJA28_zoom_D3.jpg');
+}
+
+#picture1, #picture2, #picture3 {
+    background-position: center;
+    background-size: cover;
+}
+
+
+.currentCartWrapper {
+    max-height: 100vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cartCounter {
+    font-size: 4vh;
+    text-transform: uppercase;
+    padding-bottom: 1%;
+}
+
+.currentCart {
+    height: 90%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.listOfSpecsWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+    overflow: scroll;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.listOfSpecs {
+    min-height: 50%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid rgb(160, 157, 157) 1px;
+    font-size: 1.4rem;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.clubImage {
+    width: 40%;
+    height: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* border: solid orange 3px; */
+
+}
+
+.clubImage img {
+    height: 99%;
+    width: 99%;
+    border: solid black 1px;
+    overflow: auto;
+}
+
+
+.specs {
+    width: 50%;
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.clubTitle {
+    font-size: 4vh;
+    max-width: 99% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -1%;
+    border-bottom: solid black 1px;
+}
+
+.clubSpec {
+    font-size: 3vh;
+    max-height: 20%;
+}
+
+.clubTitle, .clubSpec {
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+.finalPrice {
+    text-align: center;
+}
+
+.checkOutButtonWrapper {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkOutButton {
+    height: 70%;
+    width: 50%;
+    border: solid black 1px;
+    border-radius: 5px 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: background 0.5s;
+}
+
+.checkOutButton:hover {
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.noFinalPrice, .noCheckOutButtonWrapper {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .clubImage {
+        height: 80%;
+    }
+}
+@media (max-width: 721px) {
+    .currentCart {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .cart {
+        justify-content: center;
+    }
+    .currentCartWrapper {
+        width: 90vw;
+    }
+    .leftPicture {
+        display: none;
+    }
+}
+
+@media (max-width: 461px) {
+    .clubImage {
+        height: 80%;
+    }
+}
+
+
+
+
+

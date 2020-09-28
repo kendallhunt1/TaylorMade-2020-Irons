@@ -1,0 +1,260 @@
+.clubElement {
+    overflow: hidden;
+    
+}
+
+.featureImage {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background: rgb(249, 249, 249);
+    overflow: hidden;
+}
+
+.featureImage img {
+    max-height: 15%;
+}
+
+.featureImageDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 70%;
+    width: 35%;
+    padding-left: 10%;
+}
+
+.featureImageDescription h1 {
+    max-width: 85%;
+}
+.featureImageDescription p{
+    max-width: 90%;
+}
+
+.featureImageDescription img {
+    height: 20%;
+}
+
+.featuredImageP770 {
+    background: url('https://assets.tmcontent.com/i/e1/59033/P770-CMS-1-HeroIntro~H900_Mcrop_P50-50.jpg');
+}
+
+.featuredImageP790 {
+    background: url('https://assets.tmcontent.com/i/3a/342/MKTG-1@2x~W988-23529411765_H900_Mcrop_CZ1_P50-50.jpg');
+}
+
+.featuredImageP7MC {
+    background: url('https://assets.tmcontent.com/i/ed/61017/CMS-1-HeroIntro2~H900_Mcrop_P50-50.jpg');
+}
+
+.featuredImageP7MB {
+    background: url('https://assets.tmcontent.com/i/21/59069/CMS-1-HeroIntro~H900_Mcrop_P50-50.jpg');
+}
+
+.featuredImageP770, .featuredImageP790, .featuredImageP7MB, .featuredImageP7MC {
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.features {
+    width: 100%;
+    height: 18vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.features h1 {
+    padding-left: 2%;
+}
+
+.threeClubFeatures {
+    height: 200vh;
+    width: 100%;
+}
+
+.clubFeature {
+    height: 33%;
+}
+
+.clubFeature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(247, 248, 250);
+}
+
+.clubFeature img {
+    width: 50%;
+    height: 100%;
+}
+
+.featureDescription {
+    width: 50;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featureDescription p {
+    max-width: 70%;
+    text-align: center;
+}
+
+.featureDescription h1 {
+    text-align: center;
+}
+
+#secondClubFeature {
+    background: white;
+}
+
+.technologyList {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.technologyFeature {
+    height: 18%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 40%;
+    overflow: hidden;
+}
+
+.technologyDescription {
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.technologyHeadline {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 20%;
+    font-size: 0.6em;
+}
+
+@media (max-width: 733px) {
+    .featureImage {
+        display: flex;
+        flex-direction: column;
+    }
+    .featureImageDescription, .featuredImageP770, .featuredImageP790, .featuredImageP7MB, .featuredImageP7MC {
+        width: 100%;
+    }
+    .featuredImageP770, .featuredImageP790, .featuredImageP7MB, .featuredImageP7MC {
+        background-position: 40% 10%;
+    }
+    #descriptionImageP7MB, #descriptionImageP7MC, #descriptionImageP770, #descriptionImageP790 {
+        height: 10%;
+    }
+}
+
+@media (max-width: 449px) {
+    .featureImageDescription p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 600px) {
+    .threeClubFeatures {
+        height: 220vh;
+    }
+    .clubFeature {
+        height: 33%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .clubFeature img {
+        height: 50%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .featureDescription {
+        height: 50%;
+        overflow: hidden;
+    }
+    #secondClubFeature img {
+        max-height: 50%;
+        width: auto !important;
+    }
+     #secondClubFeature p {
+        font-size: 0.9em;
+    }
+    .featureDescription h1 {
+        font-size: 1.6em;
+    }
+}
+@media (max-width: 450px) {
+    #secondClubFeature p {
+        font-size: 0.77em;
+    }
+}
+
+@media (max-width: 553px) {
+    .clubFeature h1 {
+        font-size:1.2em;
+    }
+}
+@media (max-width: 487px) {
+    .featureDescription h1 {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 1380px) {
+    .technologyList {
+        height: 120vh;
+    }
+    .technologyFeature {
+        border: solid black 1px;
+        width: 70%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .technologyHeadline {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .technologyDescription {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 646px) {
+    .technologyFeature {
+        width: 90%;
+    }
+}
+
+@media (max-width: 488px) {
+    .technologyList {
+        height: 160vh;
+    }
+}

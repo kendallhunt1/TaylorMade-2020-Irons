@@ -1,0 +1,59 @@
+.staticNav {
+  position: fixed;
+  width: 100%;
+  height: 14vh;
+  top: 0;
+  z-index: 500;
+}
+
+.nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(231, 231, 231);
+  }
+  
+  .navLinks {
+    font-size: 1.2em;
+    letter-spacing: 0.03em;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .clubLink, .navLinks img {
+    cursor: pointer;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .taylorMadeLogoWrapper {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navLinks img {
+    filter: invert(1);
+    width: 80%;
+    height: auto;
+  }
+
+  Link {
+    border: solid red 1px;
+  }
+  
+  
+  .clubLink:hover {
+    background: white;
+    border-bottom: solid rgb(1, 1, 75) 3px;
+  }

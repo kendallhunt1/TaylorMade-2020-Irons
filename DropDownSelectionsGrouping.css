@@ -1,0 +1,22 @@
+.optionWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.optionLabel {
+    width:50%;
+    font-size: 1.3vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.options select{
+    width: 100%;
+}

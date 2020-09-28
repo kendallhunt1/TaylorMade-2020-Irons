@@ -1,0 +1,410 @@
+.displayBox {
+    padding-top: 20vh;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 6vh;
+    -webkit-box-shadow: inset 0px 20px 35px -21px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 20px 35px -21px rgba(0,0,0,1);
+    box-shadow: inset 0px 20px 35px -21px rgba(0,0,0,1);
+}   
+
+.clubImagesBoxWrapper {
+    height: 100%;
+    width: 66%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.clubImagesWrapper {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.clubImages {
+    height: 70%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 32% 32% 32%;
+    gap: 1% 2%;
+    grid-template-areas:
+        ". ."
+        ". ."
+        ". .";
+}
+
+/* @media (max-width: 819px) {
+    .clubImagesWrapper {
+        width: 35%;
+    }
+} */
+
+.smallClubImage {
+    width: 100%;
+    height: 100%;
+    border: solid rgb(221, 209, 209) 1px;
+}
+
+.smallClubImage:hover {
+    border: solid black 1px;
+    cursor: pointer;
+}
+
+.selectedImage {
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    border: solid rgb(221, 209, 209) 1px;
+}
+
+.mainImage {
+    width: 100%;
+    height: 100%;
+}
+
+.clubInformationWrapper {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.clubInformation {
+    height: 99%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxOneInformationWrapper {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.boxOneInformation {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.writtenWrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.writtenWrapperH1, .writtenWrapperP {
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 869px) {
+    .clubDescription {
+        min-width: 90%;
+    }
+}
+
+.clubDescriptionAndReadMore {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 50%;
+}
+
+.clubDescription {
+    width: 70%;
+    min-height: 80%;
+    font-size: 2.5vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.readMoreButton {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.readMoreButton:hover {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.optionsAndAddToCart {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.clubOptions {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.dropDownSelectionsGrouping {
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 49% 49%;
+    gap: 2% 2%;
+    grid-template-areas:
+        ". ."
+        ". .";
+}
+
+.dropDownSelectionsGrouping div {
+    height: 100%;
+}
+
+.buyButtonWrapper {
+    display: flex;
+    align-items: center;
+    height: 80%;
+}
+.buyButton {
+    height: 50%;
+}
+
+@media (max-width: 989px) {
+    .buyButton {
+        width: 70%;
+    }
+    .displayBox {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 711px) {
+    .displayBox {
+        padding-top: 18vh;
+        align-items: space-around;
+        flex-direction: column;
+        padding-bottom: 3%;
+        height: 150vh;
+    }
+
+    .clubImagesBoxWrapper {
+        width: 100%;
+        height: 70%;
+    }
+    .clubImagesWrapper {
+        width: 40%;
+    }
+    .clubImages {
+        height: 100%;
+    }
+    .clubInformationWrapper {
+        width: 100%;
+        height: 40%;
+    }
+    .clubInformation {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .boxOneInformationWrapper {
+        height: 80%;
+        width: 20%;
+    }
+    .boxOneInformation {
+        align-items: center;
+        
+    }
+
+    .writtenWrapperH1, .writtenWrapperP {
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .clubDescriptionAndReadMore {
+        height: 90%;
+        width: 40%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .clubDescription{
+        font-size: 3vh;
+        text-align: center;
+        height: 70%;
+    }
+    .readMoreButton {
+        width: 100%;
+        height: 30%;
+    }
+    .readMoreButton span {
+        text-align: center;
+        width: 100%;
+        font-size: 1.5em;
+    }
+    .optionsAndAddToCart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+    }
+    .clubOptions {
+        width: 100%;
+        height: 60%;
+    }
+    .dropDownSelectionsGrouping {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 80%;
+        width:  100%;
+    }
+    .dropDownSelectionsGrouping div {
+        display: flex;
+        align-items: center;
+        height:100%;
+        width: 100%;
+        font-size: 1em;
+    }
+    .buyButtonWrapper {
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center !important;
+    }
+    .buyButton {
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 612px) {
+    .displayBox {
+        height: 100vh;
+    }
+    .clubImagesBoxWrapper {
+        flex-direction: column-reverse;
+    }
+    .clubImagesWrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .clubImages {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .smallClubImage {
+        width: 16%;
+        height: 60%;
+    }
+    .selectedImage {
+        height: 70%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .clubInformation {
+        align-items: center;
+    }
+    .clubDescription {
+        font-size: 2.2vh;
+    }
+    .buyButtonWrapper {
+        height: 20%;
+    }
+}
+
+@media (max-width: 524px) {
+    .clubDescription {
+        font-size: 1.05em;
+    }
+}
+
+@media (max-width: 524px) {
+
+    .clubInformation {
+        display: grid;
+        height: 50vh;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+        overflow: hidden;
+        width: 100%;
+    }
+    .boxOneInformationWrapper, .clubDescriptionAndReadMore, .optionsAndAddToCart {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .boxOneInformationWrapper, .clubDescriptionAndReadMore {
+        border-bottom: solid black 1px;
+    }
+    .clubDescription {
+        font-size: 2.8vw;
+    }
+    .optionsAndAddToCart {
+        width: 200% !important;
+        max-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .readMoreButton span {
+        font-size: 1em;
+    }
+    .clubOptions {
+        width: 50%;
+    }
+    .buyButton {
+        width: 30%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    .smallClubImage {
+        min-height: 70%;
+    }
+    .selectedImage {
+        min-height: 70%;
+    }
+}
+
+@media (max-width: 410px) {
+    .smallClubImage {
+        height: 40%;
+    }
+}
+
+@media (max-width: 360px) {
+    .smallClubImage {
+        height: 37%;
+    }
+}
